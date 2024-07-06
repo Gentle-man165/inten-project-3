@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Typography */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        /* Navigation Styles */
+        header nav ul {
+            list-style: none;
+            text-align:right;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* Product Section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .product {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product h1 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .product .price {
+            font-size: 1.2em;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        .product .description {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Call-to-Action Button */
+        button.cta {
+            background: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        button.cta:hover {
+            background: #d35400;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 100%;
+            }
+
+            header nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }element.style {
+}
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+    padding: 0 8px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+.w3-center {
+    text-align: center !important;
+}
+.w3-small {
+    font-size: 12px !important;
+}
+body, h1, h2, h3, h4, h5, h6, .w3-wide {
+    font-family: "Montserrat", sans-serif;
+}
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+injected stylesheet
+:host, :root {
+    --rem: 16;
+}
+.product img {
+            max-width: 100%;
+            height: auto;
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+      .w3-row-padding(
+        display: inline-block;
+      )  
+            
+
+p {
+    display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+        }
+        element.style {
+}
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+    padding: 0 8px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+
+
+        <h1>Ikks Fashion Vlogs</h1>
+    </center>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\scarf.jpeg" alt="Product Image 1">
+                <h1>Product Name 1</h1>
+                <p class="price">₹7,499</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\Sweater.jpeg" alt="Product Image 2">
+                <h1>Product Name 2</h1>
+                <p class="price">₹12,999</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\Jeans.jpeg" alt="Product Image 3">
+                <h1>Jeans</h1>
+                <p class="price">₹3,499</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\Shoes.jpg" alt="Product Image 4">
+                <h1> Hat</h1>
+                <p class="price">₹500</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\Coat.jpg" alt="Product Image 5">
+                <h1>Product Name 5</h1>
+                <p class="price">₹1,999</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\T-Shirt.jpegg" alt="Product Image 6">
+                <h1>Product Name 6</h1>
+                <p class="price">₹8,999</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\Jacket.jpeg" alt="Product Image 7">
+                <h1>Jacket</h1>
+                <p class="price">₹14,999</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="D:\GIT\repo\inten-project-3\hat.jpeg" alt="Product Image 8">
+                <h1>Hat</h1>
+                <p class="price">₹6,499</p>
+                <p class="description">Awesome product.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <style>
+            .contact-form{
+                border-radius: 20%;
+            
+            }
+        </style>
+        
+        
+        <div class="contact-form">
+            <center>
+                <h3>Contact</h3>
+                <p>Questions? Go ahead.</p>
+                <center>
+                <form>
+                    <p><label for="name">Name</label><br><input type="text" id="name" name="name"></p>
+                    <p><label for="email">Email</label><br><input type="email" id="email" name="email"></p>
+                    <p><label for="subject">Subject</label><br><input type="text" id="subject" name="subject"></p>
+                    <p><label for="message">Message</label><br><textarea id="message" name="message"></textarea></p>
+                    <button type="submit">Submit</button>
+                </form>
+        </span>
+        </footer>
+        <center>
+        <p>&copy; 2024 E-commerce Site. All rights reserved.</p>
+    </center>
+    </footer>
+</body>
+</html>
